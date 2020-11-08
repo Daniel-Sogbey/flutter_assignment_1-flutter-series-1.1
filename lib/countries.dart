@@ -19,7 +19,8 @@ class Countries extends StatelessWidget {
           width: double.infinity,
           child: Text(
             countries[itemIndex],
-            style: TextStyle(fontSize: 25.0),
+            style: TextStyle(fontSize: 25.0,
+            color: Colors.blue,),
             textAlign: TextAlign.center,
           ),
         ),
