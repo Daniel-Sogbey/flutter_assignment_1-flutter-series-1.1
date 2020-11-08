@@ -18,9 +18,11 @@ class Countries extends StatelessWidget {
         Container(
           width: double.infinity,
           child: Text(
-            countries[itemIndex],
-            style: TextStyle(fontSize: 25.0,
-            color: Colors.blue,),
+            'My favourite countries are: ' + countries[itemIndex],
+            style: TextStyle(
+              fontSize: 25.0,
+              color: Colors.blue,
+            ),
             textAlign: TextAlign.center,
           ),
         ),
