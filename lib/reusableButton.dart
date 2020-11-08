@@ -9,21 +9,25 @@ class ReusableButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 60.0,
       width: double.infinity,
-      height: 50.0,
-      margin: EdgeInsets.symmetric(
-        vertical: 30,
-        horizontal: 60.0,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+          color: Colors.blue,
+          width: 2.0,
+          style: BorderStyle.solid,
+        ),
       ),
-      child: RaisedButton(
-        splashColor: Colors.white,
-        onPressed: buttonFunction,
-        color: Colors.blue,
+      margin: EdgeInsets.symmetric(vertical: 30, horizontal: 60.0),
+      child: GestureDetector(
+        onTap: buttonFunction,
         child: Text(
           buttonText,
           style: TextStyle(
             fontSize: 20.0,
-            color: Colors.white,
+            color: Colors.blue,
           ),
           textAlign: TextAlign.center,
         ),
